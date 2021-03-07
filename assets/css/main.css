@@ -2016,7 +2016,9 @@ header h6+p {
 
 header.major {
   margin: 0 0 1em 0;
+  text-align: center;
 }
+
 
 header.major:after {
   background: rgba(144, 144, 144, 0.5);
@@ -3079,10 +3081,11 @@ body.is-preload #header:after {
   background-color: #4686a0;
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed, fixed, fixed;
-  background-image: url("images/Upshot-woods.jpg"), url("images/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
+  background-image: url("images/overlay1.png"), url("../../images/header.jpg");/* linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);*/
   background-position: top left, center center, center center;
   background-size: auto, cover, cover;
   text-align: center;
+  background-color: white;
 }
 
 #footer a {
@@ -3444,6 +3447,20 @@ body #header .inner img {
 
 body #three .alignmentgra{
 
+text-align: center;
+
+}
+
+.colorBrand{
+
+
+}
+
+.noBullets{
+
+list-style-type: none;
+padding: 0;
+margin: 0;
 text-align: center;
 
 }
