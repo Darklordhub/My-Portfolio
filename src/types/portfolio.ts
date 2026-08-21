@@ -31,3 +31,22 @@ export interface SocialLink {
   label: string;
   href: string;
 }
+
+export interface GovernanceCapability {
+  number: string;
+  title: string;
+  description: string;
+  themes: string[];
+}
+
+export interface GovernanceApproachStage {
+  number: string;
+  title: string;
+  description: string;
+  activities: string[];
+}
+
+export interface GovernancePrinciple {
+  title: string;
+  description: string;
+}
