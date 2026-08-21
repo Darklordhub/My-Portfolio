@@ -66,3 +66,17 @@ export interface ExperienceTheme {
   title: string;
   description: string;
 }
+
+export interface CaseStudy {
+  id: string;
+  number: string;
+  category: string;
+  title: string;
+  intro: string;
+  context: string;
+  challenge: string;
+  approach: string[];
+  outcome: string;
+  tags: string[];
+  optionalMetric?: string;
+}
