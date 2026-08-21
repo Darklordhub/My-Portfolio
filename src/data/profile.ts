@@ -5,5 +5,4 @@ export const profile: Profile = {
   name: 'Mohamed Badri',
   role: 'Senior Governance Analyst',
   tagline: 'IT Governance · Risk · Assurance · Technology Advisory',
-  location: 'Bahrain',
 };

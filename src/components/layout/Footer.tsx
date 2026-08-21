@@ -10,7 +10,7 @@ export function Footer() {
           <p>IT Governance · Risk · Assurance</p>
         </div>
         <div className="footer-meta">
-          <p>{profile.location}</p>
+          <p>{contactDetails.location}</p>
           <p>© {new Date().getFullYear()}</p>
         </div>
         <div aria-label="Professional links" className="footer-social-links">
