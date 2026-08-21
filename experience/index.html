@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      (() => {
+        try {
+          document.documentElement.dataset.theme = localStorage.getItem('portfolio-theme') === 'light' ? 'light' : 'dark';
+        } catch {
+          document.documentElement.dataset.theme = 'dark';
+        }
+      })();
+    </script>
+    <title>Professional Experience | Mohamed Badri</title>
+    <meta name="description" content="Explore Mohamed Badri's career progression from enterprise IT operations through assurance and digital transformation into technology governance." />
+    <link rel="canonical" href="https://darklordhub.github.io/My-Portfolio/experience/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Professional Experience | Mohamed Badri" />
+    <meta property="og:description" content="Explore Mohamed Badri's career progression from enterprise IT operations through assurance and digital transformation into technology governance." />
+    <meta property="og:url" content="https://darklordhub.github.io/My-Portfolio/experience/" />
+    <meta property="og:site_name" content="Mohamed Badri | Technology Governance" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Professional Experience | Mohamed Badri" />
+    <meta name="twitter:description" content="Explore Mohamed Badri's career progression from enterprise IT operations through assurance and digital transformation into technology governance." />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/pages/experience/main.tsx"></script>
+  </body>
+</html>

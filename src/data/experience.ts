@@ -1,0 +1,93 @@
+import type { ExperienceRole, ExperienceTheme } from '../types/portfolio';
+
+export const experienceContent = {
+  hero: {
+    eyebrow: 'Professional Experience',
+    headline: ['From technical operations', 'to technology governance.'],
+    summary: 'My career has progressed across enterprise IT operations, quality and compliance, digital transformation and technology governance.',
+    perspective: 'That progression provides a practical understanding of how technology decisions, controls, risk, operations and business requirements intersect.',
+  },
+  progression: ['IT Operations', 'Enterprise Engineering', 'Compliance & Assurance', 'Digital Transformation', 'Technology Governance'],
+  progressionStatement: 'Each stage added a different perspective: how technology operates, how it is controlled, how it changes and ultimately how it should be governed.',
+  roles: [
+    {
+      period: 'February 2026 — Present',
+      role: 'Senior Governance Analyst',
+      organisation: 'Gulf Air Group',
+      summary: 'Technology governance, regulatory assurance, IT compliance, technology risk, controls, resilience and management oversight across enterprise technology environments.',
+      highlights: [
+        'Governance controls, procedures, policy and standards oversight',
+        'Technology risk, practical control design and validation',
+        'IT contract, vendor, licensing, renewal and SLA governance',
+        'PCI DSS and ISO 27001 compliance support and audit readiness',
+        'Business Impact Analysis, criticality assessment and continuity exercises',
+        'Governance dashboards, KPIs/KRIs, remediation tracking and management reporting',
+      ],
+      tags: ['Technology Governance', 'Risk & Controls', 'Compliance', 'Resilience', 'Vendor Governance'],
+      isCurrent: true,
+    },
+    {
+      period: 'March 2024 — January 2026',
+      role: 'Senior Digital Transformation & Process Automation Analyst',
+      organisation: 'Gulf Air Group',
+      summary: 'Led and supported enterprise digital transformation, process automation and governance initiatives, translating operational requirements into structured digital workflows and technology solutions.',
+      highlights: [
+        'Process redesign and governance-enabled workflow automation',
+        'Procurement governance, RFx documentation and evaluation traceability',
+        'Contract and vendor governance, including acceptance criteria',
+        'Enterprise resilience technology and KPI dashboard visibility',
+        'SLA visibility, initiative prioritisation and stakeholder engagement',
+        'Change management and business adoption across digital initiatives',
+      ],
+      tags: ['Digital Transformation', 'Process Automation', 'Workflow Governance', 'Procurement', 'Change Adoption'],
+      metric: '40+ processes mapped and redesigned',
+    },
+    {
+      period: 'November 2022 — March 2024',
+      role: 'IT Quality Assurance & Compliance Specialist',
+      organisation: 'Gulf Air',
+      summary: 'Technology compliance, control assurance, regulatory readiness and governance support across enterprise IT activities.',
+      highlights: [
+        'IT contracts, vendor agreements, licensing, renewals and SLAs',
+        'PCI DSS and ISO 27001 compliance support',
+        'Control validation, compliance checklists and evidence management',
+        'KPIs/KRIs, audit readiness and remediation monitoring',
+        'Business Impact Analysis, continuity testing and management reporting',
+      ],
+      tags: ['IT Assurance', 'Compliance', 'Control Validation', 'Audit Readiness', 'Continuity'],
+    },
+    {
+      period: 'May 2021 — November 2022',
+      role: 'Desktop Engineer',
+      organisation: 'Gulf Air',
+      summary: 'Enterprise endpoint engineering, infrastructure operations and high-availability user support within a large aviation environment.',
+      highlights: [
+        'Vulnerability and patch management across enterprise endpoints',
+        'Golden-image lifecycle support for Windows and Mac environments',
+        'SLA-driven endpoint and executive support',
+        'Operational support across a large enterprise user environment',
+      ],
+      tags: ['Endpoint Engineering', 'Patch Management', 'Infrastructure Operations', 'SLA Support'],
+      metric: '2,000+ enterprise users supported',
+    },
+    {
+      period: 'October 2019 — December 2020',
+      role: 'Information Technology Specialist',
+      organisation: 'Shura Council',
+      summary: 'IT operations, infrastructure, security projects and public-sector technology delivery.',
+      highlights: [
+        'IT security projects, patch management and virtualisation support',
+        'Multi-vendor coordination and public-sector procurement',
+        'Technology project delivery and vendor-selection activities',
+        "Contributed to the technology delivery supporting Bahrain's first online parliamentary session during the COVID-19 period.",
+      ],
+      tags: ['IT Operations', 'Security Projects', 'Virtualisation', 'Public-Sector Delivery'],
+    },
+  ] satisfies ExperienceRole[],
+  themes: [
+    { title: 'Operate', description: 'Enterprise technology operations, infrastructure and user environments.' },
+    { title: 'Assure', description: 'Compliance, audit readiness, controls and regulatory requirements.' },
+    { title: 'Transform', description: 'Process redesign, automation, governance-enabled digital improvement and change.' },
+    { title: 'Govern', description: 'Risk, controls, accountability, resilience, oversight and management visibility.' },
+  ] satisfies ExperienceTheme[],
+};
