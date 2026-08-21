@@ -50,3 +50,19 @@ export interface GovernancePrinciple {
   title: string;
   description: string;
 }
+
+export interface ExperienceRole {
+  period: string;
+  role: string;
+  organisation: string;
+  summary: string;
+  highlights: string[];
+  tags: string[];
+  isCurrent?: boolean;
+  metric?: string;
+}
+
+export interface ExperienceTheme {
+  title: string;
+  description: string;
+}
