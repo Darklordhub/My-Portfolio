@@ -16,11 +16,18 @@ export interface NavigationItem {
 }
 
 export interface Profile {
+  monogram: string;
   name: string;
+  role: string;
   tagline: string;
+  location: string;
 }
 
 export interface FoundationContent {
   description: string;
 }
 
+export interface SocialLink {
+  label: string;
+  href: string;
+}
