@@ -4,7 +4,7 @@
 .hero-layout { display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(25rem, 0.98fr); align-items: center; gap: clamp(2rem, 5vw, 5rem); }
 .eyebrow, .section-label { margin: 0; color: var(--accent); }
 .hero-name { margin: 1.1rem 0 0.18rem; color: var(--text); font-size: clamp(1.45rem, 2.5vw, 2rem); font-weight: 700; letter-spacing: -0.025em; line-height: 1.2; }
-.hero-role { margin: 0 0 0.8rem; color: var(--achievement); font-size: 1rem; font-weight: 700; }
+.hero-role { margin: 0 0 0.8rem; color: var(--achievement-text); font-size: 1rem; font-weight: 700; }
 .hero h1, .section-heading { margin: 0; color: var(--text); letter-spacing: -0.035em; line-height: 1.04; }
 .hero h1 { max-width: 14ch; font-size: clamp(2.85rem, 6.1vw, 5.7rem); }
 .hero h1 span { display: block; }
@@ -78,7 +78,7 @@
 .career-role { padding: clamp(1.5rem, 3vw, 2.15rem); border-top: 2px solid var(--accent); border-bottom: 1px solid var(--border); background: linear-gradient(90deg, color-mix(in srgb, var(--surface-raised) 92%, transparent), transparent); }
 .role-date { margin: 0; color: var(--accent); }
 .career-role h3 { margin: 0.8rem 0 0; color: var(--text); font-size: clamp(1.5rem, 3vw, 2.15rem); letter-spacing: -0.03em; line-height: 1.12; }
-.career-role-company { margin: 0.42rem 0 0; color: var(--achievement); font-size: 1rem; font-weight: 700; }
+.career-role-company { margin: 0.42rem 0 0; color: var(--achievement-text); font-size: 1rem; font-weight: 700; }
 .career-role-description { max-width: 44rem; margin: 1rem 0 0; color: var(--text-secondary); font-size: 1rem; line-height: 1.6; }
 .progression-list { display: grid; margin: 0; padding: 0; list-style: none; }
 .progression-list li { position: relative; padding: 0.78rem 0 0.78rem 2.2rem; border-bottom: 1px solid var(--border); color: var(--text-secondary); font-size: 0.96rem; font-weight: 650; }
@@ -103,7 +103,7 @@
 .credentials-heading .section-cta { flex: 0 0 auto; margin: 0; }
 .credential-strip { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0.65rem; margin: 0; padding: 0; list-style: none; }
 .credential-strip-item { display: grid; min-height: 4.5rem; place-items: center; padding: 0.65rem; border: 1px solid var(--border); border-radius: 0.48rem; background: color-mix(in srgb, var(--surface) 88%, transparent); color: var(--text-secondary); font-size: clamp(0.82rem, 1.3vw, 0.98rem); font-weight: 700; letter-spacing: -0.01em; text-align: center; }
-.credential-strip-item--governance { border-top: 2px solid var(--achievement); color: var(--achievement); }
+.credential-strip-item--governance { border-top: 2px solid var(--achievement); color: var(--achievement-text); }
 .credential-strip-item--technical { color: var(--text-secondary); }
 
 .contact-section { padding-block: clamp(3.75rem, 7vw, 6.25rem); }

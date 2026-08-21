@@ -22,7 +22,7 @@
 .technical-foundation-item > p:nth-of-type(2) { max-width: 39rem; margin: 0.8rem 0 0; color: var(--text-secondary); font-size: 1rem; line-height: 1.6; }
 .technical-tags { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 1.2rem 0 0; padding: 0; list-style: none; }
 .technical-tags li { padding: 0.34rem 0.5rem; border: 1px solid var(--border); border-radius: 0.3rem; background: color-mix(in srgb, var(--surface) 75%, transparent); color: var(--text-secondary); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.67rem; font-weight: 700; letter-spacing: 0.015em; }
-.technical-relevance-label { margin-top: 1.45rem; color: var(--achievement); }
+.technical-relevance-label { margin-top: 1.45rem; color: var(--achievement-text); }
 .technical-context-list { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 0.65rem 0 0; padding: 0; list-style: none; }
 .technical-context-list li { padding: 0.3rem 0.45rem; border-left: 1px solid color-mix(in srgb, var(--accent) 60%, var(--border)); color: var(--text-secondary); font-size: 0.85rem; line-height: 1.35; }
 
@@ -46,7 +46,7 @@
 .governance-mapping > article > div { display: grid; gap: 0.5rem; }
 .governance-mapping > article > div > p { color: var(--text-muted); font-size: 0.63rem; }
 .governance-mapping > article > div > span { color: var(--text-secondary); font-size: 0.96rem; line-height: 1.55; }
-.governance-mapping > article > div:last-child > p { color: var(--achievement); }
+.governance-mapping > article > div:last-child > p { color: var(--achievement-text); }
 
 .technical-transition { padding-block: clamp(3.75rem, 7vw, 6.5rem); }
 .technical-transition-panel { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr); gap: clamp(1.75rem, 5vw, 5rem); padding: clamp(1.5rem, 5vw, 3.5rem); border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--border)); border-radius: 0.8rem; background: linear-gradient(135deg, color-mix(in srgb, var(--accent-strong) 20%, var(--surface-strong)), var(--surface)); box-shadow: var(--shadow); }

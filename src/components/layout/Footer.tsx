@@ -15,7 +15,7 @@ export function Footer() {
         </div>
         <div aria-label="Professional links" className="footer-social-links">
           {contactDetails.socialLinks.map((link) => (
-            <a href={link.href} key={link.label} rel="noreferrer" target="_blank">
+            <a href={link.href} key={link.label} rel="noopener noreferrer" target="_blank">
               {link.label}
             </a>
           ))}

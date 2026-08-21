@@ -37,7 +37,7 @@
 .case-study-approach ul { display: grid; gap: 0.55rem; margin: 0.85rem 0 0; padding: 0; color: var(--text-secondary); font-size: 0.96rem; line-height: 1.52; list-style: none; }
 .case-study-approach li::before { margin-right: 0.45rem; color: var(--accent-secondary); content: '—'; }
 .case-study-outcome { padding: 1.15rem 1.25rem; border-left: 2px solid var(--achievement); background: color-mix(in srgb, var(--achievement) 7%, transparent); }
-.case-study-outcome h3 { color: var(--achievement); }
+.case-study-outcome h3 { color: var(--achievement-text); }
 .case-study-tags { display: flex; flex-wrap: wrap; gap: 0.45rem; max-width: 68rem; margin: 1.35rem 0 0; padding: 0; list-style: none; }
 .case-study-tags li { padding: 0.34rem 0.5rem; border: 1px solid var(--border); border-radius: 0.3rem; background: color-mix(in srgb, var(--surface) 74%, transparent); color: var(--text-secondary); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.67rem; font-weight: 700; letter-spacing: 0.015em; }
 

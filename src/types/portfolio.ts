@@ -22,10 +22,6 @@ export interface Profile {
   tagline: string;
 }
 
-export interface FoundationContent {
-  description: string;
-}
-
 export interface SocialLink {
   label: string;
   href: string;

@@ -101,19 +101,7 @@
 .header-social-links a:hover, .footer-social-links a:hover { color: var(--accent); }
 .menu-toggle { display: none; }
 
-.foundation-page { display: grid; min-height: 25rem; align-items: center; padding-block: clamp(4rem, 12vw, 9rem); }
-
-.foundation-content {
-  padding: clamp(1.5rem, 4vw, 3rem);
-  border: 1px solid var(--border);
-  border-radius: 0.85rem;
-  background: color-mix(in srgb, var(--surface) 92%, transparent);
-  box-shadow: var(--shadow);
-}
-
-.foundation-content h1 { max-width: 17ch; margin: 0.5rem 0 1rem; color: var(--text); font-size: clamp(2.25rem, 7vw, 4.75rem); letter-spacing: -0.025em; line-height: 1.08; }
-
-.page-kicker, .eyebrow, .section-label, .work-category, .role-date, .credential-organisation, .technical-area-label, .profile-summary-value {
+.eyebrow, .section-label, .work-category, .role-date {
   color: var(--text-muted);
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 0.69rem;
@@ -121,8 +109,6 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-
-.page-summary { max-width: 44rem; margin: 0; color: var(--text-secondary); font-size: clamp(1rem, 2vw, 1.2rem); }
 
 .site-footer { padding-block: 2rem; border-top: 1px solid var(--border); background: color-mix(in srgb, var(--bg-secondary) 86%, transparent); color: var(--text-muted); font-size: 0.82rem; }
 .footer-inner { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.6fr) auto; align-items: end; gap: 1.25rem; }

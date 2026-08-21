@@ -23,7 +23,7 @@
 .contact-method--primary { border-top: 2px solid var(--achievement); background: linear-gradient(145deg, color-mix(in srgb, var(--achievement) 9%, var(--surface-strong)), var(--surface)); }
 .contact-method-label { color: var(--text-muted); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.67rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
 .contact-method strong { margin: auto 0 0; color: var(--text); font-size: clamp(1.05rem, 1.8vw, 1.35rem); letter-spacing: -0.02em; line-height: 1.25; overflow-wrap: anywhere; }
-.contact-method--primary strong { color: var(--achievement); }
+.contact-method--primary strong { color: var(--achievement-text); }
 .contact-method small { margin-top: 0.7rem; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.45; }
 
 @media (max-width: 65rem) {

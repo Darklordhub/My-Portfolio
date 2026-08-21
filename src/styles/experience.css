@@ -34,7 +34,7 @@
 .timeline-content { padding: 0; }
 .timeline-entry--current .timeline-content { padding: clamp(1.15rem, 2.5vw, 1.75rem); border: 1px solid color-mix(in srgb, var(--accent) 50%, var(--border)); border-radius: 0.6rem; background: linear-gradient(145deg, color-mix(in srgb, var(--accent-strong) 18%, var(--surface-strong)), var(--surface)); box-shadow: var(--shadow); }
 .timeline-entry--current .timeline-marker { border-color: var(--accent); background: var(--accent); box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 16%, transparent); }
-.timeline-organisation { margin: 0; color: var(--achievement); font-size: 0.95rem; font-weight: 700; }
+.timeline-organisation { margin: 0; color: var(--achievement-text); font-size: 0.95rem; font-weight: 700; }
 .timeline-content h3 { margin: 0.45rem 0 0; color: var(--text); font-size: clamp(1.3rem, 2.6vw, 2rem); font-weight: 700; letter-spacing: -0.025em; line-height: 1.15; }
 .timeline-summary { max-width: 53rem; margin: 0.9rem 0 0; color: var(--text-secondary); font-size: 1rem; line-height: 1.65; }
 .timeline-metric { display: inline-block; margin: 1rem 0 0; padding: 0.35rem 0.55rem; border-left: 2px solid var(--achievement); background: color-mix(in srgb, var(--achievement) 8%, transparent); color: var(--text); font-size: 0.88rem; font-weight: 700; }

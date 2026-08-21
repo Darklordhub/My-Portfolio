@@ -65,7 +65,7 @@ export function Header({ activePage }: HeaderProps) {
           <ThemeToggle />
           <div aria-label="Professional links" className="header-social-links">
             {contactDetails.socialLinks.map((link) => (
-              <a href={link.href} key={link.label} rel="noreferrer" target="_blank">
+              <a href={link.href} key={link.label} rel="noopener noreferrer" target="_blank">
                 {link.label} <span aria-hidden="true">↗</span>
               </a>
             ))}
@@ -73,13 +73,14 @@ export function Header({ activePage }: HeaderProps) {
           <button
             aria-controls="primary-navigation"
             aria-expanded={isMenuOpen}
+            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
             className="menu-toggle"
             onClick={toggleMenu}
             ref={menuButtonRef}
             type="button"
           >
             <span aria-hidden="true">{isMenuOpen ? '×' : '☰'}</span>
-            <span className="menu-toggle-label">Menu</span>
+            <span className="menu-toggle-label">{isMenuOpen ? 'Close' : 'Menu'}</span>
           </button>
         </div>
       </div>
