@@ -93,3 +93,13 @@ export interface TechnicalGovernanceMapping {
   understanding: string;
   governanceRelevance: string;
 }
+
+export interface Credential {
+  name: string;
+  issuer: string;
+  fullName?: string;
+  category: string;
+  relevance: string;
+  group: 'governance' | 'technical';
+  supports: string[];
+}
