@@ -1,7 +1,7 @@
 import type { SocialLink } from '../types/portfolio';
 
 export const contactDetails = {
-  email: 'mohamed.badri@hotmail.com',
+  email: 'mohamed.badri95@hotmail.com',
   location: 'Bahrain',
   discussionAreas: [
     'IT Governance',
