@@ -80,3 +80,16 @@ export interface CaseStudy {
   tags: string[];
   optionalMetric?: string;
 }
+
+export interface TechnicalArea {
+  title: string;
+  description: string;
+  technologies: string[];
+  governanceRelevance?: string[];
+}
+
+export interface TechnicalGovernanceMapping {
+  area: string;
+  understanding: string;
+  governanceRelevance: string;
+}

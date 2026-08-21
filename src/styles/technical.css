@@ -1,0 +1,89 @@
+.technical-page { overflow: clip; }
+
+.technical-hero { padding-block: clamp(3.75rem, 7vw, 6.5rem) clamp(3.5rem, 6vw, 5.5rem); }
+.technical-hero-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(19rem, 0.82fr); gap: clamp(2rem, 7vw, 7rem); align-items: end; }
+.technical-hero h1, .technical-section h2, .technical-transition h2 { margin: 1rem 0 0; color: var(--text); font-size: clamp(2.65rem, 5.5vw, 5rem); font-weight: 700; letter-spacing: -0.035em; line-height: 1.05; }
+.technical-hero h1 { max-width: 13ch; }
+.technical-hero h1 span, .technical-transition h2 span { display: block; }
+.technical-hero-copy { display: grid; gap: 0.8rem; max-width: 37rem; color: var(--text-secondary); font-size: clamp(1rem, 1.4vw, 1.1rem); line-height: 1.65; }
+.technical-hero-copy p { margin: 0; }
+.technical-hero-copy p:first-child { color: var(--text); font-size: clamp(1.12rem, 1.7vw, 1.28rem); }
+
+.technical-section { padding-block: clamp(3.75rem, 7vw, 6.5rem); }
+.technical-section-header { display: grid; grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr); gap: 1.25rem; margin-bottom: clamp(2rem, 4vw, 3.25rem); }
+.technical-section-header h2, .technical-area-layout h2 { max-width: 16ch; margin: 0; font-size: clamp(2rem, 4vw, 3.75rem); }
+.technical-section-introduction { max-width: 41rem; margin: 1rem 0 0; color: var(--text-secondary); font-size: 1rem; line-height: 1.65; }
+
+.foundation-section { border-block: 1px solid var(--border); background: color-mix(in srgb, var(--bg-secondary) 58%, transparent); }
+.technical-foundation-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--border); border-left: 1px solid var(--border); }
+.technical-foundation-item { padding: clamp(1.25rem, 3vw, 2rem); border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); background: color-mix(in srgb, var(--surface) 70%, transparent); }
+.technical-foundation-item > p:first-child, .technical-relevance-label, .governance-mapping > article > div > p { margin: 0; color: var(--accent); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.technical-foundation-item h3, .governance-mapping h3 { margin: 2rem 0 0; color: var(--text); font-size: clamp(1.2rem, 2.2vw, 1.7rem); letter-spacing: -0.02em; line-height: 1.2; }
+.technical-foundation-item > p:nth-of-type(2) { max-width: 39rem; margin: 0.8rem 0 0; color: var(--text-secondary); font-size: 1rem; line-height: 1.6; }
+.technical-tags { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 1.2rem 0 0; padding: 0; list-style: none; }
+.technical-tags li { padding: 0.34rem 0.5rem; border: 1px solid var(--border); border-radius: 0.3rem; background: color-mix(in srgb, var(--surface) 75%, transparent); color: var(--text-secondary); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.67rem; font-weight: 700; letter-spacing: 0.015em; }
+.technical-relevance-label { margin-top: 1.45rem; color: var(--achievement); }
+.technical-context-list { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 0.65rem 0 0; padding: 0; list-style: none; }
+.technical-context-list li { padding: 0.3rem 0.45rem; border-left: 1px solid color-mix(in srgb, var(--accent) 60%, var(--border)); color: var(--text-secondary); font-size: 0.85rem; line-height: 1.35; }
+
+.application-section { background: linear-gradient(115deg, color-mix(in srgb, var(--accent) 6%, transparent), transparent 58%); }
+.application-tags { margin-top: -1.4rem; }
+.application-governance-note { max-width: 58rem; margin: 1.6rem 0 0; padding: 1rem 1.2rem; border-left: 2px solid var(--accent); background: color-mix(in srgb, var(--surface) 70%, transparent); color: var(--text-secondary); font-size: 1rem; line-height: 1.6; }
+
+.technical-area-section { border-top: 1px solid var(--border); }
+.technical-area-section:nth-of-type(even) { background: color-mix(in srgb, var(--bg-secondary) 48%, transparent); }
+.technical-area-layout { display: grid; grid-template-columns: minmax(0, 0.75fr) minmax(20rem, 1.25fr); gap: clamp(2rem, 7vw, 7rem); align-items: start; }
+.technical-area-layout h2 { margin-top: 1rem; }
+.technical-area-detail { padding: clamp(1.2rem, 2.7vw, 1.75rem); border: 1px solid var(--border); border-radius: 0.6rem; background: color-mix(in srgb, var(--surface) 75%, transparent); }
+.technical-area-detail > p:first-child { margin: 0; color: var(--text-secondary); font-size: 1rem; line-height: 1.65; }
+.security-section { background: linear-gradient(110deg, color-mix(in srgb, var(--accent-secondary) 7%, transparent), transparent 64%); }
+.analytics-section { background: linear-gradient(110deg, color-mix(in srgb, var(--achievement) 6%, transparent), transparent 62%); }
+
+.mapping-section { border-block: 1px solid var(--border); background: color-mix(in srgb, var(--bg-secondary) 55%, transparent); }
+.governance-mapping { border-top: 1px solid var(--border); }
+.governance-mapping > article { display: grid; grid-template-columns: minmax(8rem, 0.35fr) minmax(16rem, 0.85fr) minmax(16rem, 0.85fr); gap: clamp(1rem, 3vw, 3.5rem); padding: 1.25rem 0; border-bottom: 1px solid var(--border); }
+.governance-mapping h3 { margin: 0; align-self: start; font-size: clamp(1.05rem, 1.9vw, 1.35rem); text-transform: uppercase; }
+.governance-mapping > article > div { display: grid; gap: 0.5rem; }
+.governance-mapping > article > div > p { color: var(--text-muted); font-size: 0.63rem; }
+.governance-mapping > article > div > span { color: var(--text-secondary); font-size: 0.96rem; line-height: 1.55; }
+.governance-mapping > article > div:last-child > p { color: var(--achievement); }
+
+.technical-transition { padding-block: clamp(3.75rem, 7vw, 6.5rem); }
+.technical-transition-panel { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr); gap: clamp(1.75rem, 5vw, 5rem); padding: clamp(1.5rem, 5vw, 3.5rem); border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--border)); border-radius: 0.8rem; background: linear-gradient(135deg, color-mix(in srgb, var(--accent-strong) 20%, var(--surface-strong)), var(--surface)); box-shadow: var(--shadow); }
+.technical-transition h2 { max-width: 14ch; margin-top: 0.75rem; font-size: clamp(2rem, 3.7vw, 3.5rem); }
+.technical-transition-panel > div:last-child { align-self: end; }
+.technical-transition-panel > div:last-child > p { max-width: 35rem; margin: 0; color: var(--text-secondary); font-size: 1rem; line-height: 1.65; }
+.technical-transition-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.4rem; }
+.technical-button { display: inline-flex; min-height: 2.95rem; align-items: center; gap: 0.5rem; padding: 0.65rem 1rem; border: 1px solid var(--accent-strong); border-radius: 0.45rem; background: var(--accent-strong); color: #fff; font-size: 0.9rem; font-weight: 700; text-decoration: none; transition: border-color 180ms ease, background-color 180ms ease, transform 180ms ease; }
+.technical-button:hover { border-color: var(--accent); background: var(--accent); transform: translateY(-2px); }
+.technical-button span, .technical-secondary-link span { transition: transform 180ms ease; }
+.technical-button:hover span, .technical-secondary-link:hover span { transform: translateX(0.2rem); }
+.technical-secondary-link { display: inline-flex; min-height: 2.95rem; align-items: center; gap: 0.45rem; color: var(--accent); font-size: 0.9rem; font-weight: 700; text-decoration: none; }
+
+@media (max-width: 65rem) {
+  .technical-hero-layout, .technical-area-layout { grid-template-columns: 1fr; gap: 1.5rem; }
+  .technical-section-header { grid-template-columns: 1fr; gap: 0.85rem; }
+  .governance-mapping > article { grid-template-columns: minmax(7rem, 0.28fr) minmax(0, 1fr); }
+  .governance-mapping > article > div:last-child { grid-column: 2; }
+}
+
+@media (max-width: 48rem) {
+  .technical-foundation-grid { grid-template-columns: 1fr; }
+  .technical-transition-panel { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 37.5rem) {
+  .technical-hero { padding-top: 3.1rem; }
+  .technical-hero h1 { font-size: clamp(2.35rem, 10.5vw, 3.25rem); line-height: 1.1; }
+  .technical-section { padding-block: 3.25rem; }
+  .technical-section-header h2, .technical-area-layout h2 { font-size: clamp(1.85rem, 8.8vw, 2.35rem); line-height: 1.12; }
+  .technical-foundation-item h3 { margin-top: 1.35rem; }
+  .application-tags { margin-top: -0.5rem; }
+  .technical-area-detail { padding: 1rem; }
+  .governance-mapping > article { grid-template-columns: 1fr; gap: 0.9rem; padding-block: 1.1rem; }
+  .governance-mapping > article > div:last-child { grid-column: auto; }
+  .technical-transition { padding-block: 3.5rem; }
+  .technical-transition h2 { font-size: clamp(1.95rem, 9vw, 2.45rem); line-height: 1.12; }
+  .technical-transition-actions { display: grid; grid-template-columns: 1fr; }
+  .technical-button, .technical-secondary-link { width: 100%; min-height: 3rem; justify-content: center; }
+}
