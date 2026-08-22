@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { ParticleNetwork } from '../effects/ParticleNetwork';
 import type { PageKey } from '../../types/portfolio';
 import { Footer } from './Footer';
 import { Header } from './Header';
@@ -11,6 +12,7 @@ interface PageShellProps {
 export function PageShell({ activePage, children }: PageShellProps) {
   return (
     <div className="site-shell">
+      <ParticleNetwork />
       <a className="skip-link" href="#main-content">
         Skip to content
       </a>
@@ -22,4 +24,3 @@ export function PageShell({ activePage, children }: PageShellProps) {
     </div>
   );
 }
-

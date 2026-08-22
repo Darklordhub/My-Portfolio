@@ -5,6 +5,8 @@ export const homeContent = {
       'Senior Governance Analyst with experience across IT governance, technology risk, assurance, compliance and digital transformation.',
     perspective:
       'Combining governance experience with a practical understanding of enterprise technology.',
+    availability:
+      'Open to selected consulting engagements and professional opportunities.',
   },
   focusAreas: [
     {
@@ -23,7 +25,7 @@ export const homeContent = {
   career: {
     period: 'February 2026 — Present',
     role: 'Senior Governance Analyst',
-    organisation: 'Gulf Air Group',
+    organisation: 'Gulf Air',
     progression: ['IT Operations', 'Assurance', 'Digital Transformation', 'Governance'],
   },
   credentials: ['CISA', 'CPISI Advanced', 'Security+', 'ITIL 4', 'MCSA', 'MCSD'],
