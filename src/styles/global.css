@@ -10,7 +10,14 @@ html {
 body {
   min-width: 20rem;
   margin: 0;
-  background: radial-gradient(circle at 85% -15%, color-mix(in srgb, var(--accent) 8%, transparent), transparent 28rem), var(--bg);
+  overflow-x: clip;
+  background:
+    radial-gradient(circle at 84% -12%, var(--ambient-primary), transparent 36rem),
+    radial-gradient(circle at 12% 34%, var(--ambient-secondary), transparent 32rem),
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px),
+    var(--bg);
+  background-size: auto, auto, 5.5rem 5.5rem, 5.5rem 5.5rem, auto;
   color: var(--text);
   font-family: Tahoma, Verdana, "Segoe UI", sans-serif;
   line-height: 1.5;
@@ -37,26 +44,78 @@ button:focus-visible {
   outline-offset: 3px;
 }
 
+.site-shell {
+  position: relative;
+  isolation: isolate;
+}
+
+.site-shell > :not(.particle-network) {
+  position: relative;
+  z-index: 1;
+}
+
+.particle-network {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
 .site-container {
   width: min(calc(100% - (var(--page-gutter) * 2)), var(--content-width));
   margin-inline: auto;
 }
 
 .skip-link {
-  position: fixed;
-  z-index: 20;
-  top: 0.75rem;
-  left: 0.75rem;
-  padding: 0.7rem 1rem;
-  border-radius: 0.35rem;
-  background: var(--text);
-  color: var(--bg);
-  text-decoration: none;
-  transform: translateY(-180%);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .skip-link:focus {
-  transform: translateY(0);
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  left: 1rem;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0.7rem 1rem;
+  overflow: visible;
+  border: 1px solid var(--focus-ring);
+  border-radius: 0.4rem;
+  clip: auto;
+  clip-path: none;
+  background: var(--text);
+  color: var(--bg);
+  box-shadow: 0 0.75rem 2rem rgb(0 0 0 / 28%);
+  text-decoration: none;
+}
+
+.reveal {
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal:not(.is-visible) {
+    opacity: 0;
+    transform: translateY(0.875rem);
+  }
+}
+
+@media (max-width: 48rem) {
+  .particle-network {
+    display: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
