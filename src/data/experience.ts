@@ -10,7 +10,7 @@ export const experienceContent = {
     {
       period: 'February 2026 — Present',
       role: 'Senior Governance Analyst',
-      organisation: 'Gulf Air Group',
+      organisation: 'Gulf Air',
       summary:
         'Technology governance, regulatory assurance, risk and control oversight across enterprise technology activities.',
       highlights: [
@@ -24,7 +24,7 @@ export const experienceContent = {
     {
       period: 'March 2024 — January 2026',
       role: 'Senior Digital Transformation & Process Automation Analyst',
-      organisation: 'Gulf Air Group',
+      organisation: 'Gulf Air',
       summary:
         'Led and supported enterprise process automation, digital transformation and governance-enabled workflow improvement.',
       highlights: [

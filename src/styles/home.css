@@ -1,12 +1,12 @@
 .home-hero {
-  padding-block: clamp(4rem, 8vw, 6.5rem) clamp(3.5rem, 6vw, 5rem);
+  padding-block: clamp(4.25rem, 8vw, 7.25rem) clamp(3.75rem, 6vw, 5.75rem);
 }
 
 .home-hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr);
-  gap: clamp(2rem, 8vw, 8rem);
-  align-items: end;
+  grid-template-columns: minmax(0, 1.28fr) minmax(20rem, 0.72fr);
+  gap: clamp(2.5rem, 7vw, 7rem);
+  align-items: center;
 }
 
 .profile-name,
@@ -15,13 +15,14 @@
 .focus-item p,
 .snapshot-organisation,
 .career-progression,
-.credentials-strip p {
+.professional-focus-list,
+.current-role-panel p {
   margin: 0;
 }
 
 .profile-name {
   color: var(--text);
-  font-size: clamp(1.3rem, 2vw, 1.65rem);
+  font-size: clamp(1.3rem, 2vw, 1.7rem);
   font-weight: 700;
 }
 
@@ -36,9 +37,9 @@
   max-width: 14ch;
   margin: 1.25rem 0 0;
   color: var(--text);
-  font-size: clamp(2.8rem, 5.4vw, 5rem);
-  letter-spacing: -0.045em;
-  line-height: 1.02;
+  font-size: clamp(3rem, 5.5vw, 5.35rem);
+  letter-spacing: -0.052em;
+  line-height: 1.01;
 }
 
 .home-hero h1 span,
@@ -47,14 +48,24 @@
 }
 
 .home-introduction {
-  max-width: 34rem;
+  max-width: 42rem;
+  margin-top: 1.5rem;
   color: var(--text-secondary);
-  font-size: clamp(1rem, 1.35vw, 1.1rem);
+  font-size: clamp(1rem, 1.3vw, 1.1rem);
   line-height: 1.65;
 }
 
 .home-introduction p + p {
-  margin-top: 0.9rem;
+  margin-top: 0.8rem;
+}
+
+.home-introduction .availability-line {
+  max-width: 39rem;
+  margin-top: 1.1rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--border);
+  color: var(--text);
+  font-weight: 700;
 }
 
 .home-actions {
@@ -69,18 +80,21 @@
   min-height: 2.75rem;
   align-items: center;
   gap: 0.45rem;
-  padding: 0.62rem 0.9rem;
+  padding: 0.62rem 0.95rem;
   border: 1px solid var(--border);
-  border-radius: 0.35rem;
+  border-radius: 0.45rem;
+  background: var(--surface);
   color: var(--text);
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
+  transition: border-color 180ms ease, background-color 180ms ease, transform 180ms ease;
 }
 
 .button-link:hover {
   border-color: var(--accent);
-  background: var(--surface);
+  background: var(--surface-hover);
+  transform: translateY(-1px);
 }
 
 .button-link--primary {
@@ -93,52 +107,115 @@
   background: var(--accent);
 }
 
+.hero-focus-panel {
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--surface-raised) 82%, transparent), var(--surface));
+  box-shadow: var(--card-shadow);
+}
+
+.hero-focus-panel aside {
+  padding: clamp(1.35rem, 2.5vw, 2rem);
+}
+
+.panel-label {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.professional-focus-list {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.85rem;
+  padding: 0;
+  color: var(--text);
+  font-size: clamp(1rem, 1.35vw, 1.12rem);
+  font-weight: 700;
+  list-style: none;
+}
+
+.professional-focus-list li::before {
+  margin-right: 0.55rem;
+  color: var(--accent);
+  content: '—';
+}
+
+.current-role-panel {
+  display: grid;
+  gap: 0.3rem;
+  margin-top: 1.6rem;
+  padding-top: 1.35rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+}
+
+.current-role-panel .current-role-title {
+  color: var(--text);
+  font-size: 1.04rem;
+  font-weight: 700;
+}
+
+.current-role-panel .panel-label {
+  margin-bottom: 0.15rem;
+}
+
 .home-section {
-  padding-block: clamp(3.5rem, 6vw, 5.5rem);
+  padding-block: clamp(3.75rem, 6.5vw, 6rem);
   border-top: 1px solid var(--border);
 }
 
 .home-section h2 {
+  max-width: 22ch;
   margin: 0 0 1.5rem;
   color: var(--text);
-  font-size: clamp(1.7rem, 3vw, 2.4rem);
-  letter-spacing: -0.03em;
-  line-height: 1.1;
+  font-size: clamp(1.7rem, 3vw, 2.45rem);
+  letter-spacing: -0.035em;
+  line-height: 1.12;
 }
 
 .focus-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  border-top: 1px solid var(--border);
-  border-left: 1px solid var(--border);
+  gap: 1rem;
 }
 
 .focus-item {
   min-width: 0;
-  padding: clamp(1.2rem, 2.5vw, 1.8rem);
-  border-right: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  min-height: 13.5rem;
+  border: 1px solid var(--border);
+  border-radius: 0.7rem;
+  background: var(--surface);
+}
+
+.focus-item article {
+  height: 100%;
+  padding: clamp(1.3rem, 2.2vw, 1.8rem);
 }
 
 .focus-item h3,
 .career-snapshot h3 {
   margin: 0;
   color: var(--text);
-  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
-  line-height: 1.2;
+  font-size: clamp(1.12rem, 1.8vw, 1.35rem);
+  line-height: 1.24;
 }
 
 .focus-item p {
-  margin-top: 0.7rem;
+  margin-top: 0.8rem;
   color: var(--text-secondary);
-  font-size: 0.97rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.62;
 }
 
 .career-snapshot {
   display: grid;
-  grid-template-columns: minmax(11rem, 0.34fr) minmax(0, 1fr);
-  gap: clamp(1.5rem, 5vw, 5rem);
+  grid-template-columns: minmax(12rem, 0.3fr) minmax(0, 1fr);
+  gap: clamp(1.75rem, 6vw, 6rem);
 }
 
 .career-snapshot h2 {
@@ -148,9 +225,9 @@
 .snapshot-date {
   margin: 0;
   color: var(--text-muted);
-  font-size: 0.88rem;
+  font-size: 0.84rem;
   font-weight: 700;
-  line-height: 1.45;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
@@ -163,7 +240,7 @@
 .career-progression {
   margin-top: 1rem;
   color: var(--text-secondary);
-  font-size: 0.95rem;
+  font-size: 0.97rem;
 }
 
 .text-link {
@@ -187,28 +264,40 @@
 }
 
 .credentials-strip {
-  background: color-mix(in srgb, var(--bg-secondary) 55%, transparent);
+  background: color-mix(in srgb, var(--bg-secondary) 46%, transparent);
 }
 
-.credentials-strip p {
+.credential-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.credential-list li {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
   color: var(--text-secondary);
-  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  font-size: 0.9rem;
   font-weight: 700;
-  line-height: 1.8;
 }
 
 .home-contact-content {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .home-contact h2 {
   margin-bottom: 0;
 }
 
-.home-contact-content > div {
+.home-contact-content > div:last-child {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -216,18 +305,26 @@
 
 @media (max-width: 48rem) {
   .home-hero-grid,
-  .career-snapshot {
+  .career-snapshot,
+  .home-contact-content {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+  }
+
+  .home-hero-grid {
+    gap: 2rem;
+  }
+
+  .home-contact-content {
+    display: grid;
+    align-items: start;
   }
 
   .focus-list {
     grid-template-columns: 1fr;
   }
 
-  .home-contact-content {
-    align-items: flex-start;
-    flex-direction: column;
+  .focus-item {
+    min-height: auto;
   }
 }
 
@@ -237,8 +334,8 @@
   }
 
   .home-hero h1 {
-    font-size: clamp(2.5rem, 11.5vw, 3.4rem);
-    line-height: 1.08;
+    font-size: clamp(2.55rem, 11.5vw, 3.4rem);
+    line-height: 1.07;
   }
 
   .home-section {
@@ -252,5 +349,16 @@
 
   .home-actions .button-link {
     justify-content: center;
+  }
+
+  .hero-focus-panel aside > .panel-label,
+  .professional-focus-list {
+    display: none;
+  }
+
+  .current-role-panel {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
   }
 }
