@@ -3,15 +3,6 @@ import type { SocialLink } from '../types/portfolio';
 export const contactDetails = {
   email: 'mohamed.badri95@hotmail.com',
   location: 'Bahrain',
-  discussionAreas: [
-    'IT Governance',
-    'Technology Risk',
-    'IT Assurance',
-    'Regulatory Compliance',
-    'Cybersecurity Governance',
-    'Digital Governance',
-    'Technology Transformation',
-  ],
   socialLinks: [
     {
       label: 'LinkedIn',
