@@ -1,3 +1,4 @@
+import { Reveal } from '../../components/effects/Reveal';
 import { PageShell } from '../../components/layout/PageShell';
 import { experienceContent } from '../../data/experience';
 import '../../styles/experience.css';
@@ -17,11 +18,12 @@ export function ExperiencePage() {
         </section>
 
         <section className="experience-timeline-section" aria-label="Career timeline">
-          <div className="site-container">
+          <Reveal className="site-container">
             <ol className="experience-timeline">
               {experienceContent.roles.map((role) => (
                 <li className={`timeline-entry${role.isCurrent ? ' timeline-entry--current' : ''}`} key={`${role.period}-${role.role}`}>
                   <p className="timeline-date">{role.period}</p>
+                  <span aria-hidden="true" className="timeline-marker" />
                   <div className="timeline-content">
                     <h2>{role.role}</h2>
                     <p className="timeline-organisation">{role.organisation}</p>
@@ -34,7 +36,7 @@ export function ExperiencePage() {
                 </li>
               ))}
             </ol>
-          </div>
+          </Reveal>
         </section>
       </div>
     </PageShell>
