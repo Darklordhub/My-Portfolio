@@ -1,6 +1,7 @@
 export const homeContent = {
   hero: {
     headline: ['Governance that connects', 'risk, regulation', 'and technology.'],
+    identity: 'IT GOVERNANCE · TECHNOLOGY RISK · ASSURANCE',
     introduction: 'IT governance, technology risk, assurance and digital transformation.',
     availability:
       'Open to selected consulting engagements and professional opportunities.',
@@ -20,9 +21,6 @@ export const homeContent = {
     },
   ],
   career: {
-    period: '2026 — Present',
-    role: 'Senior Governance Analyst',
-    organisation: 'Gulf Air',
     progression: ['IT Operations', 'Assurance', 'Digital Transformation', 'Governance'],
   },
   credentials: ['CISA', 'CPISI Advanced', 'Security+', 'ITIL 4', 'MCSA', 'MCSD'],

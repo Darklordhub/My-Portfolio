@@ -21,7 +21,7 @@ export function HomePage() {
             <p className="chapter-label">00 / Start</p>
             <div className="start-identity">
               <p className="profile-name">{profile.name}</p>
-              <p className="profile-role">{profile.role} <span aria-hidden="true">·</span> Gulf Air</p>
+              <p className="profile-role">{homeContent.hero.identity}</p>
             </div>
             <h1 id="hero-title">
               {homeContent.hero.headline.map((line) => <span key={line}>{line}</span>)}
@@ -67,12 +67,7 @@ export function HomePage() {
                 </li>
               ))}
             </ol>
-            <article className="journey-current">
-              <p className="current-role-date">{homeContent.career.period}</p>
-              <h3>{homeContent.career.role}</h3>
-              <p>{homeContent.career.organisation}</p>
-              <a className="editorial-link" href={sitePath('experience/')}>Experience <span aria-hidden="true">↗</span></a>
-            </article>
+            <a className="editorial-link journey-link" href={sitePath('experience/')}>View Experience <span aria-hidden="true">↗</span></a>
           </Reveal>
         </section>
 
