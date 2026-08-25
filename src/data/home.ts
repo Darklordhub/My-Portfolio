@@ -1,10 +1,7 @@
 export const homeContent = {
   hero: {
-    headline: ['Governance that connects', 'risk, regulation and technology.'],
-    introduction:
-      'Senior Governance Analyst with experience across IT governance, technology risk, assurance, compliance and digital transformation.',
-    perspective:
-      'Combining governance experience with a practical understanding of enterprise technology.',
+    headline: ['Governance that connects', 'risk, regulation', 'and technology.'],
+    introduction: 'IT governance, technology risk, assurance and digital transformation.',
     availability:
       'Open to selected consulting engagements and professional opportunities.',
   },
@@ -23,7 +20,7 @@ export const homeContent = {
     },
   ],
   career: {
-    period: 'February 2026 — Present',
+    period: '2026 — Present',
     role: 'Senior Governance Analyst',
     organisation: 'Gulf Air',
     progression: ['IT Operations', 'Assurance', 'Digital Transformation', 'Governance'],

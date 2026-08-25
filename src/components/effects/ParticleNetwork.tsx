@@ -131,7 +131,7 @@ export function ParticleNetwork() {
           );
 
           if (distance < connectionDistance) {
-            const opacity = (1 - distance / connectionDistance) * (isLightTheme ? 0.14 : 0.2);
+            const opacity = (1 - distance / connectionDistance) * (isLightTheme ? 0.1 : 0.2);
             context.beginPath();
             context.moveTo(particle.x, particle.y);
             context.lineTo(comparisonParticle.x, comparisonParticle.y);
@@ -145,7 +145,7 @@ export function ParticleNetwork() {
       particles.forEach((particle) => {
         context.beginPath();
         context.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
-        context.fillStyle = `rgba(${particleColour}, ${isLightTheme ? 0.2 : 0.26})`;
+        context.fillStyle = `rgba(${particleColour}, ${isLightTheme ? 0.16 : 0.26})`;
         context.fill();
       });
     };
