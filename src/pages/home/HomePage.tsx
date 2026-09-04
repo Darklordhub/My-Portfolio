@@ -44,20 +44,14 @@ export function HomePage() {
 
         <section className="home-chapter focus-chapter" id="focus" aria-labelledby="focus-title">
           <Reveal className="site-container focus-layout">
-            <div className="chapter-heading-full">
-              <p className="chapter-label">01 / Focus</p>
-              <h2 id="focus-title">Professional focus.</h2>
-            </div>
+            <h2 className="chapter-label section-chapter-label" id="focus-title">01 / Focus</h2>
             <FocusChapter />
           </Reveal>
         </section>
 
         <section className="home-chapter journey-chapter" aria-labelledby="journey-title">
           <Reveal className="site-container journey-layout">
-            <div className="chapter-heading-full">
-              <p className="chapter-label">02 / Journey</p>
-              <h2 id="journey-title">Career progression.</h2>
-            </div>
+            <h2 className="chapter-label section-chapter-label" id="journey-title">02 / Journey</h2>
             <ol className="journey-path" aria-label="Career progression">
               {homeContent.career.progression.map((stage, index) => (
                 <li key={stage} style={{ '--journey-order': index } as CSSProperties}>
@@ -75,13 +69,13 @@ export function HomePage() {
           <Reveal className="site-container connect-composition">
             <p className="chapter-label">03 / Connect</p>
             <div className="connect-heading">
-              <h2 id="connect-title">Consulting engagements.<br />Professional opportunities.</h2>
+              <h2 id="connect-title">Open to selected<br />professional opportunities<br />and advisory work.</h2>
             </div>
             <ul className="connect-focus" aria-label="Professional areas">
-              <li>IT governance.</li>
-              <li>Technology risk.</li>
-              <li>Assurance.</li>
-              <li>Digital transformation.</li>
+              <li>IT Governance</li>
+              <li>Technology Risk</li>
+              <li>Assurance</li>
+              <li>Digital Transformation</li>
             </ul>
             <div className="connect-links">
               <a className="editorial-link" href={sitePath('contact/')}>Contact <span aria-hidden="true">↗</span></a>
