@@ -11,7 +11,11 @@ export function ExperiencePage() {
           <div className="site-container">
             <p className="page-label">Professional Experience</p>
             <h1 id="experience-title">
-              {experienceContent.hero.headline.map((line) => <span key={line}>{line}</span>)}
+              {experienceContent.hero.headline.map((line, index) => (
+                <span key={line}>
+                  {line}{index < experienceContent.hero.headline.length - 1 ? ' ' : null}
+                </span>
+              ))}
             </h1>
             <p>{experienceContent.hero.summary}</p>
           </div>

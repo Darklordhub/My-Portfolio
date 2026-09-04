@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import { contactDetails } from '../../data/contact';
 import { profile } from '../../data/profile';
 import type { PageKey } from '../../types/portfolio';
 import { sitePath } from '../../utils/paths';
@@ -12,11 +11,38 @@ interface HeaderProps {
 
 export function Header({ activePage }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const navigationRef = useRef<HTMLElement | null>(null);
   const menuButtonRef = useRef<HTMLButtonElement | null>(null);
 
   const closeMenu = () => setIsMenuOpen(false);
   const toggleMenu = () => setIsMenuOpen((isOpen) => !isOpen);
+
+  useEffect(() => {
+    let animationFrame: number | undefined;
+
+    const updateHeader = () => {
+      setIsScrolled(window.scrollY > 24);
+      animationFrame = undefined;
+    };
+
+    const handleScroll = () => {
+      if (animationFrame === undefined) {
+        animationFrame = window.requestAnimationFrame(updateHeader);
+      }
+    };
+
+    updateHeader();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+
+      if (animationFrame !== undefined) {
+        window.cancelAnimationFrame(animationFrame);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     if (!isMenuOpen) {
@@ -50,7 +76,7 @@ export function Header({ activePage }: HeaderProps) {
   }, []);
 
   return (
-    <header className="site-header">
+    <header className={`site-header${isScrolled ? ' is-scrolled' : ''}`}>
       <div className="site-container header-inner">
         <a aria-label={`${profile.name} — Overview`} className="brand" href={sitePath()} onClick={closeMenu}>
           <span aria-hidden="true" className="brand-monogram">{profile.monogram}</span>
@@ -63,13 +89,6 @@ export function Header({ activePage }: HeaderProps) {
         />
         <div className="header-actions">
           <ThemeToggle />
-          <div aria-label="Professional links" className="header-social-links">
-            {contactDetails.socialLinks.map((link) => (
-              <a href={link.href} key={link.label} rel="noopener noreferrer" target="_blank">
-                {link.label} <span aria-hidden="true">↗</span>
-              </a>
-            ))}
-          </div>
           <button
             aria-controls="primary-navigation"
             aria-expanded={isMenuOpen}

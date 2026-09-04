@@ -1,5 +1,9 @@
 .experience-hero {
-  padding-block: clamp(4.25rem, 7.5vw, 6.75rem) clamp(2.75rem, 4vw, 3.75rem);
+  padding-block: clamp(5rem, 8vw, 7.5rem) clamp(3rem, 4vw, 4rem);
+}
+
+.experience-hero .page-label {
+  margin-bottom: 1.75rem;
 }
 
 .experience-hero h1 {
@@ -13,14 +17,14 @@
 
 .experience-hero > .site-container > p:last-child {
   max-width: 45rem;
-  margin: 1.3rem 0 0;
+  margin: 1.5rem 0 0;
   color: var(--text-secondary);
   font-size: clamp(1rem, 1.3vw, 1.1rem);
   line-height: 1.65;
 }
 
 .experience-timeline-section {
-  padding-bottom: clamp(3.75rem, 6.5vw, 6rem);
+  padding-bottom: clamp(1rem, 1.5vw, 1.25rem);
 }
 
 .experience-timeline {
@@ -32,7 +36,7 @@
 }
 
 .timeline-entry {
-  --timeline-entry-padding: clamp(2.25rem, 3.7vw, 3.25rem);
+  --timeline-entry-padding: clamp(2rem, 3vw, 2.75rem);
   display: grid;
   grid-template-columns: minmax(12.5rem, 13.5rem) 0.75rem minmax(0, 1fr);
   column-gap: 0;
@@ -95,7 +99,7 @@
 }
 
 .timeline-entry--current .timeline-content {
-  padding: clamp(1.1rem, 2vw, 1.45rem);
+  padding: clamp(1.35rem, 1.8vw, 1.5rem);
   border: 1px solid color-mix(in srgb, var(--achievement) 46%, var(--border));
   border-left: 2px solid var(--achievement);
   border-radius: 0.6rem;
@@ -135,35 +139,50 @@
 
 .timeline-summary {
   max-width: 49rem;
-  margin-top: 0.9rem;
+  margin-top: 0.75rem;
   color: var(--text-secondary);
-  line-height: 1.62;
+  line-height: 1.6;
 }
 
 .timeline-content ul {
   display: grid;
-  gap: 0.45rem;
+  gap: 0.4rem;
   max-width: 53rem;
-  margin: 1rem 0 0;
+  margin: 0.85rem 0 0;
   padding-left: 1.15rem;
   color: var(--text-secondary);
   line-height: 1.58;
 }
 
 .timeline-metric {
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   color: var(--accent);
   font-size: 0.92rem;
   font-weight: 700;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .experience-page .reveal:not(.is-visible) {
+    opacity: 0.84;
+    transform: none;
+  }
+}
+
 @media (max-width: 48rem) {
+  .experience-hero {
+    padding-bottom: 2.75rem;
+  }
+
+  .experience-timeline-section {
+    padding-bottom: 2.5rem;
+  }
+
   .timeline-entry {
-    --timeline-entry-padding: 2.25rem;
+    --timeline-entry-padding: 0.5rem;
     grid-template-columns: 0.9rem minmax(0, 1fr);
     column-gap: 0.85rem;
-    row-gap: 0.8rem;
-    padding-block: 2.25rem;
+    row-gap: 0.7rem;
+    padding-block: var(--timeline-entry-padding);
   }
 
   .timeline-date {
@@ -181,13 +200,13 @@
   }
 
   .timeline-entry--current .timeline-content {
-    padding: 1rem;
+    padding: 1.15rem;
   }
 }
 
 @media (max-width: 37.5rem) {
   .experience-hero {
-    padding-top: 3.5rem;
+    padding-top: 4rem;
   }
 
   .experience-hero h1 {
